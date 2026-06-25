@@ -109,6 +109,23 @@ export default function LoginPage() {
             >
               {loading ? <div className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : 'Entrar'}
             </button>
+
+            <div className="relative my-6">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-200"></div>
+              </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-[#fdfcf0] text-gray-500">Área do Produtor</span>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => router.push('/produtor')}
+              className="w-full py-3.5 bg-transparent border-2 border-[#4a2c2a] text-[#4a2c2a] font-semibold rounded-xl hover:bg-[#4a2c2a]/5 transition-all flex items-center justify-center gap-2"
+            >
+              Entrar como Produtor (Bypass)
+            </button>
           </form>
 
           <p className="text-center text-sm text-[#6b5b58] mt-8">

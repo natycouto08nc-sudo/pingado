@@ -35,6 +35,10 @@ export default function LandingPage() {
           <span className="font-display text-2xl font-bold text-[#4a2c2a]">Pingado</span>
         </div>
         <div className="flex items-center gap-3">
+          <Link href="/login?role=produtor" className="text-sm font-medium text-[#f97316] border border-[#f97316] px-4 py-2 rounded-xl hover:bg-orange-50 transition-colors hidden md:block">
+            Sou Produtor
+          </Link>
+          <div className="hidden md:block w-px h-6 bg-[#4a2c2a]/10 mx-1"></div>
           <Link href="/login" className="text-sm font-medium text-[#4a2c2a] hover:text-[#f97316] transition-colors px-4 py-2">
             Entrar
           </Link>
@@ -67,6 +71,12 @@ export default function LandingPage() {
               </Link>
               <Link href="/login" className="text-[#4a2c2a] font-medium text-base hover:text-[#f97316] transition-colors">
                 Já tenho conta
+              </Link>
+            </div>
+            <div className="mt-6 flex items-center gap-2 text-sm">
+              <span className="text-[#6b5b58]">Produz cafés especiais?</span>
+              <Link href="/login?role=produtor" className="text-[#f97316] font-semibold hover:underline">
+                Conecte-se como produtor
               </Link>
             </div>
           </div>
